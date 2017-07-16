@@ -1,17 +1,20 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { SmoothScrollToDirective, SmoothScrollDirective } from "ng2-smooth-scroll";
+import {Ng2PageScrollModule} from 'ng2-page-scroll';
+import { FormsModule } from '@angular/forms';
+import { AngularFontAwesomeModule } from 'angular-font-awesome/angular-font-awesome';
 
 import { AppComponent } from './app.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    SmoothScrollDirective,
-    SmoothScrollToDirective
   ],
   imports: [
     BrowserModule,
+    FormsModule,
+    AngularFontAwesomeModule,
+    Ng2PageScrollModule.forRoot()
   ],
   providers: [],
   bootstrap: [AppComponent]

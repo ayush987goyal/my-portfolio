@@ -1,4 +1,109 @@
+.aboutDiv{
+    background-color: #ffd464;
+}
+
+.portfolioDiv{
+    background-color: orange;
+}
+
+.contactDiv{
+    background-color: yellow;
+    padding: 10px;
+}
+
 a{
     font-size: 25px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.nav.navbar-nav.navbar-right li a {
+    color: #f4f4f2;
+}
+
+.nav.navbar-nav.navbar-right .active a{
+    background-color: #f26964;
+}
+
+.nav.navbar-nav.navbar-right .active a:focus{
+    background-color: #f26964;
+}
+
+.navbar-header a {
+    color: #f4f4f2;    
+}
+
+.about-heading{
+    text-align: center;
+    font-style: italic;
+    font-size: 40px;
+    /* background-color: white; */
+    margin: 10px;
+    color: black;    
+    /* color: #f26964;     */
+}
+
+.about-other{
+    text-align: center;
+    font-size: 25px;
+    /* background-color: white; */
+    margin: 10px;
+    /* color: #f26964;   */
+    color: black;    
+    
+}
+
+#about{
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.portfolio-heading{
+    text-align: center;
+    font-style: italic;
+    font-size: 45px;
+     /* background-color: white;  */
+     margin: 10px; 
+    /* color: #f26964; */
+    color: black;    
+    
+}
+
+.contact-heading{
+    text-align: center;
+    font-style: italic;
+    font-size: 45px;
+     /* background-color: white;  */
+     margin: 10px; 
+    /* color: #f26964; */
+    color: black;    
+    
+}
+
+.contact-content{
+    font-size: 25px;
+}
+
+nav{
+    background-color: #1253a4;
+    border: none;
+}
+
+.my-img{
+    /* border: 1px solid #1253a4; */
+    border-radius: 100%;
+    display: block;
+    margin: auto;
+
+    height: 200px;
+    max-height: 100%;
+
+    width: 200px;
+    max-width: 100%;
+}
+
+#foot{
+    background-color: #1253a4;
+    color: #f4f4f2;  
+    font-size: 25px;
+    border: none;
+    margin-top: 3px;
 }
