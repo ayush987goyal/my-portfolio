@@ -1,0 +1,23 @@
+<nav class="navbar navbar-inverse navbar-fixed-top navbar-class">
+    <div class="container">
+        <div class="navbar-header">
+            <a href="#" class="navbar-brand" (click)="onSectionChange('about')" [scrollTo]="about">Ayush</a>
+        </div>
+        <ul class=" nav navbar-nav navbar-right">
+            <li [ngClass]="{'active': (selectedSection === 'about')}" (click)="onSectionChange('about')" ><a href="#" [scrollTo]="about">About</a></li>
+            <li  [ngClass]="{'active': (selectedSection === 'portfolio')}" (click)="onSectionChange('portfolio')"><a href="#" [scrollTo]="portfolio"  >Portfolio</a></li>
+            <li [ngClass]="{'active': (selectedSection === 'contact')}" (click)="onSectionChange('contact')"><a href="#" [scrollTo]="contact"   >Contact</a></li>
+        </ul>
+    </div>
+</nav>
+<div class="container" style="padding-top: 75px;">
+    <div class="row" id="about">
+        Some about text
+    </div>
+    <div class="row" id="portfolio" >
+        Some portfolio text
+    </div>
+    <div class="row" id="contact">
+        Some contact text
+    </div>
+</div>
