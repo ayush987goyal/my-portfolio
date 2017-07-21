@@ -31,59 +31,18 @@
         <div class="row portfolio-heading">
             Portfoilio
         </div>
-        <div class="row container" >
-            <div class="col-md-5" *ngFor="let item of portfolioData; let i = index" style="margin: 10px; margin-left:60px;">
-                 <ng-template [ngIf]="i<2"> 
-                     <a [href]='item["link"]' target="_blank">
+        <div class="row container" *ngFor="let item of portfolioData | pairs">
+            <div class="col-md-5" *ngFor="let port of item" style="margin: 10px; margin-left:60px;">
+                <a [href]='port["link"]' target="_blank">
                      <div class="row"> 
-                         <img [src]='item["img"]' alt="" class="port-img img-responsive img-rounded"> 
-                     </div> 
-                        <div class="row" style="text-align:center; font-size:30px;">
-                            {{item["name"]}}
-                        </div>
-                    </a>
-                 </ng-template> 
-            </div>
-        </div>
-        <div class="row container" >
-            <div class="col-md-5" *ngFor="let item of portfolioData; let i = index" style="margin: 10px; margin-left:60px;">
-                 <ng-template [ngIf]="i>=2 && i<4"> 
-                     <a [href]='item["link"]' target="_blank">
-                     <div class="row"> 
-                         <img [src]='item["img"]' alt="" class="port-img img-responsive img-rounded"> 
-                     </div> 
-                        <div class="row" style="text-align:center; font-size:30px;">
-                            {{item["name"]}}
-                        </div>
-                    </a>
-                 </ng-template> 
-            </div>
-        </div>
-        <div class="row container" >
-            <div class="col-md-5" *ngFor="let item of portfolioData; let i = index" style="margin: 10px; margin-left:60px;">
-                 <ng-template [ngIf]="i>=4 && i<6"> 
-                     <a [href]='item["link"]' target="_blank">
-                     <div class="row"> 
-                         <img [src]='item["img"]' alt="" class="port-img img-responsive img-rounded"> 
+                         <img [src]='port["img"]' alt="" class="port-img img-responsive img-rounded"> 
                      </div> 
                         <div class="row" style="text-align:center; font-size:30px; margin-top:10px;">
-                            {{item["name"]}}
+                            {{port["name"]}}
                         </div>
-                    </a>
-                 </ng-template> 
+                 </a>
             </div>
-                <div class="col-md-5" *ngFor="let item of portfolioData; let i = index" style="margin: 10px; margin-left:60px;">
-                 <ng-template [ngIf]="i>=6"> 
-                     <a [href]='item["link"]' target="_blank">
-                     <div class="row"> 
-                         <img [src]='item["img"]' alt="" class="port-img img-responsive img-rounded"> 
-                     </div> 
-                        <div class="row" style="text-align:center; font-size:30px; margin-top:10px;">
-                            {{item["name"]}}
-                        </div>
-                    </a>
-                 </ng-template> 
-            </div>
+
         </div>
     </div>
     <div class="row contactDiv container" id="contact">

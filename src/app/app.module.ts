@@ -5,10 +5,11 @@ import { FormsModule } from '@angular/forms';
 import { AngularFontAwesomeModule } from 'angular-font-awesome/angular-font-awesome';
 
 import { AppComponent } from './app.component';
+import { PairsPipe } from './pairs.pipe';
 
 @NgModule({
   declarations: [
-    AppComponent,
+    AppComponent,PairsPipe
   ],
   imports: [
     BrowserModule,
