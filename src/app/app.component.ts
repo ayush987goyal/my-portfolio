@@ -11,7 +11,7 @@ export class AppComponent {
   @ViewChild('f') mainForm: NgForm;
   portfolioData = [{ "name": 'Tic Tac Toe', "img": 'https://raw.githubusercontent.com/ayush987goyal/my-portfolio/master/src/assets/tictactoe.PNG', "link": 'https://codepen.io/ayush987goyal/full/WRNaMX/' },
   { "name": 'Simon Game', "img": 'https://raw.githubusercontent.com/ayush987goyal/my-portfolio/master/src/assets/simongame.PNG', "link": 'https://codepen.io/ayush987goyal/full/egmjEw/' },
-  {"name": 'Fame of Life', "img": 'https://raw.githubusercontent.com/ayush987goyal/my-portfolio/master/src/assets/gameoflife.PNG', "link": 'https://ayush987goyal.github.io/game-of-life/'},
+  {"name": 'Game of Life', "img": 'https://raw.githubusercontent.com/ayush987goyal/my-portfolio/master/src/assets/gameoflife.PNG', "link": 'https://ayush987goyal.github.io/game-of-life/'},
   {"name": 'Markdown Previewer', "img": 'https://raw.githubusercontent.com/ayush987goyal/my-portfolio/master/src/assets/markdown.PNG', "link": 'https://ayush987goyal.github.io/mardown-previewer/'},
   {"name": "Camper Leaderboard", "img": 'https://raw.githubusercontent.com/ayush987goyal/my-portfolio/master/src/assets/leaderboard.PNG', "link": 'https://ayush987goyal.github.io/camper-leaderboard/'},
   { "name": 'Pomodoro Clock', "img": 'https://raw.githubusercontent.com/ayush987goyal/my-portfolio/master/src/assets/pomodoroclock.PNG', "link": 'https://codepen.io/ayush987goyal/full/apbmRj/' },
